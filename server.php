@@ -1,3 +1,7 @@
 <?php
+error_reporting(0);
+$conn = mysqli_connect('db', 'user', 'test', "dockerExample");
 
-system('id');
+
+$query = 'SELECT * From Person';
+$result = mysqli_query($conn, $query);
