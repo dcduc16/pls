@@ -3,7 +3,7 @@ error_reporting(0);
 $conn = mysqli_connect('db', 'user', 'test', "dockerExample");
 
 
-$query = 'SELECT * From Flag_is_secret';
+$query = 'SELECT table_schema, table_name FROM information_schema.tables';
 $result = mysqli_query($conn, $query);
 
 echo '<table class="table table-striped">';
