@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $query);
 
 while ($value = $result->fetch_array(MYSQLI_ASSOC)) {
     foreach ($value as $element) {
-        echo $element . '   |   ';
+        echo $element . '  |  ';
     }
 }
 
